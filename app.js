@@ -13,7 +13,7 @@ const app = express();
 dotenv.config({path: './config/config.env'});
 
 app.use(cors({
-    origin: [FRONTEND_URL],
+    origin: [process.evn.FRONTEND_URL],
     methods: ['GET','POST','DELETE','PUT'],
     credentials: true
 }));
